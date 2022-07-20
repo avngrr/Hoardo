@@ -242,6 +242,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FastEndpoints": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "FastEndpoints.Swagger": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.15.1, )"
