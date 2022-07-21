@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "0+TFip39dq+Bao7/W6Ebb/yeTwTUfMeA8lykFJCHjlQTn1EZ6x5lrv1N7WXDciDXdjEtQAP6jdS9W0uwo0PTOg==",
+  "dgSpecHash": "fMCp4q6tr+BevCOmp4pJvdSIZrXnhBctPCy9xPxqMoN4oam57FdddnxIY/l7cNsRC2G3UrMs/Px2gHoVDOWG/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.7\\microsoft.aspnetcore.authorization.6.0.7.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.7\\microsoft.aspnetcore.components.6.0.7.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.7\\microsoft.aspnetcore.components.analyzers.6.0.7.nupkg.sha512",
@@ -12,6 +17,7 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.7\\microsoft.aspnetcore.components.webassembly.6.0.7.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.7\\microsoft.aspnetcore.components.webassembly.devserver.6.0.7.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.7\\microsoft.aspnetcore.metadata.6.0.7.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",

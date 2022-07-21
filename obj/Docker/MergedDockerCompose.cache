@@ -1,0 +1,16 @@
+services:
+  server:
+    build:
+      context: C:\Users\Enzo\Documents\Coding\Projects\Hoardo
+      dockerfile: src/Server/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: server
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\Enzo\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Enzo\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
