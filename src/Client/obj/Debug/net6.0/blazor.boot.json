@@ -7,6 +7,11 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
+      "MediatR.dll": "sha256-5JP3MguhkAHQ+bz8WyGxc8bqkRX2InbWKVplJEsFzGQ=",
+      "MediatR.Contracts.dll": "sha256-jbWZnge7bolAMw8ppWQLC7bKPAY6DjkJn2ezN9OXafU=",
+      "MediatR.Extensions.Microsoft.DependencyInjection.dll": "sha256-blkFqVBGqO7GrdhrAXsMHPTRmzPouRK2+2BV\/23QKbc=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-hSXzdQFPBtfxBs3B2TFaykHyx2Mgqh21anN\/Gx+VKSo=",
       "Microsoft.AspNetCore.Components.dll": "sha256-BikLdQx36rYsSVwqNFVsuDwW4Soedlr\/SnAFSy5tjW8=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-92y2h3G1nlPZuHI7ZX3WI+lOUF3ipefJgi4gLswtgeQ=",
@@ -196,17 +201,19 @@
       "mscorlib.dll": "sha256-wmk56X5dbt29rrFZKEFpOFjotkZA+JSxA4fqkgmBsOU=",
       "netstandard.dll": "sha256-CvlfDmNgFRYT7l\/xZKu91FlbTFyLG\/5cH7YX63k9ghE=",
       "System.Private.CoreLib.dll": "sha256-aF4imeOpA59D6F5qCLabzkeY7MvRZzNYzavhB\/bdxvM=",
-      "Application.dll": "sha256-UjuueRCA0cKvuul6apCZeZp8JX4lfUwMMw5tR19M1IM=",
-      "Domain.dll": "sha256-6E+FGfFBqFMca7y8yzrctUGVcbWuDBrZw7gDc4t9yj4=",
-      "Client.dll": "sha256-Xr+MV2wO\/d6WlcuhhOIUlKmrb7c7L0lBPUgNEgahviQ="
+      "Application.dll": "sha256-np1q828ZWmLqiVF1Hw86N9PuywaX20sjqxV92wQthvU=",
+      "Domain.dll": "sha256-jBVlVjnFYVJPXEXfv20h+9S+RgfRM9ZqYmmOvTDo7Yk=",
+      "Shared.dll": "sha256-E0WVSqIC\/zYGtxbfSTJ3fP9\/uVHoOItGVIyon5vrPQo=",
+      "Client.dll": "sha256-MeSrrUJpZr3Au4hT8y\/6Erfiq3G0PmMmRqASIcCe+uY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Application.pdb": "sha256-jkgpu7oaXBuqnlBDNXCoMbKM4Ek40kBWWaMkB6FZ7QI=",
-      "Domain.pdb": "sha256-EpWVbNRJToG2aJN9JpsGuDQGIzf9A5IA4Etx\/8EQsEU=",
-      "Client.pdb": "sha256-esRsSaS2Mben1l1hUgVd5LpNBKMFms5HMGM99zeRAJE="
+      "Application.pdb": "sha256-KSAA5hCkkj5QqgUXkJzkKsYVzCEvB2eKDm12mDUQAY4=",
+      "Domain.pdb": "sha256-MlKhCymRw8QkBkqzUWvti6DvH4ZZZ5TPj1Z1BAht0EE=",
+      "Shared.pdb": "sha256-ilG19AAfayTmH6AQbhzJRNc4+u+cN7WZHuQHd\/FUJ7M=",
+      "Client.pdb": "sha256-iqMylwaGCbMtwKN\/mhG6QUmOmN92pDyuCwi391pj7tg="
     },
     "runtime": {
       "dotnet.6.0.7.9cosz7gn0n.js": "sha256-pvJcJ6jtDSfxgXm03QYRTm4aAi9PSzMSJODReHtvASY=",

@@ -13,3 +13,5 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\obj\Debug\net6.0\
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\bin\Debug\net6.0\Shared.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Application\bin\Debug\net6.0\Shared.pdb

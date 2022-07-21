@@ -7,7 +7,6 @@ public static class ServiceCollectionExtension
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
-        return services.AddAutoMapper(Assembly.GetExecutingAssembly())
-            .AddMediatR(Assembly.GetExecutingAssembly());
+        return services.AddAutoMapper(Assembly.GetExecutingAssembly());           
     }
 }
