@@ -1,0 +1,36 @@
+﻿---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hoardo
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hoardo
+    spec:
+      containers:
+      - name: hoardo
+        image: avngr/hoardo:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: ASPNETCORE_URLS
+          value: http://*:80
+  selector:
+    matchLabels:
+      app: pizzabackend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hoardo-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    name: http
+    targetPort: 80
+  selector:
+    app: hoardo

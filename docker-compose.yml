@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  server:
+    image: ${DOCKER_REGISTRY-}server
+    build:
+      context: .
+      dockerfile: src/Server/Dockerfile
+    environment:
+      - "ConnectionStrings__DefaultConnection=Server=10.10.10.15;Database=PVR;User Id=sa;Password=JvNJwBuzDTY8nH;"
+    ports:
+      - "5005:5005"
+      - "5006:5006"
+    restart: on-failure
+    container_name: hoardo

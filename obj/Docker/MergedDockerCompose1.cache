@@ -1,0 +1,23 @@
+services:
+  server:
+    build:
+      context: C:\Users\Enzo\Documents\Coding\Projects\Hoardo
+      dockerfile: src/Server/Dockerfile
+    container_name: hoardo
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings__DefaultConnection: Server=10.10.10.15;Database=PVR;User Id=sa;Password=JvNJwBuzDTY8nH;
+    image: server
+    ports:
+    - target: 80
+    - target: 443
+    - published: 5005
+      target: 5005
+    - published: 5006
+      target: 5006
+    restart: on-failure
+    volumes:
+    - C:\Users\Enzo\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Enzo\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

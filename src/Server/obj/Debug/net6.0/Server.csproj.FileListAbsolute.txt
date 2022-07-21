@@ -97,3 +97,4 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\Media
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\Shared.dll
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\Shared.pdb
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cs
