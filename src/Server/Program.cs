@@ -1,4 +1,5 @@
-﻿using FastEndpoints;
+﻿using Application.Extensions;
+using FastEndpoints;
 using Microsoft.EntityFrameworkCore;
 using Server.Contexts;
 
@@ -7,6 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 //builder.Services.AddFastEndpoints();
+builder.Services.AddApplicationServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

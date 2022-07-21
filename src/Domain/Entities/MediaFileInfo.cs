@@ -9,4 +9,5 @@ public class MediaFileInfo : EntityBase<int>
     public DateTime DateAdded { get; set; }
     public string SceneName { get; set; }
     public string ReleaseGroup { get; set; }
+    public string RootFolderPath { get; set; }
 }
