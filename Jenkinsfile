@@ -29,7 +29,7 @@ pipeline {
                 }
             }
         }        
-            steps{
+
                   podTemplate(inheritFrom: 'default')
                   {
                         node(POD_LABEL){
