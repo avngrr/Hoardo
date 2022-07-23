@@ -38,7 +38,7 @@ podTemplate(
             {
                 withKubeConfig([namespace: "hoardo"]) 
                 {
-                    sh 'kubectl apply -f ./src/Server/api-deploy.yml'
+                    sh 'kubectl get pods'
                 }
             }
         
