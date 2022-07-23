@@ -20,7 +20,7 @@ spec:
           value: http://*:80
   selector:
     matchLabels:
-      app: pizzabackend
+      app: hoardo
 ---
 apiVersion: v1
 kind: Service
