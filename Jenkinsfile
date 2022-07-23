@@ -10,8 +10,6 @@ podTemplate(
     hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock'),
     hostPathVolume(hostPath: '/usr/bin/kubectl', mountPath: '/usr/bin/kubectl'),
     secretVolume(mountPath: '/etc/kubernetes', secretName: 'cluster-admin')],
-  annotations: [
-      podAnnotation(key: "development", value: appName)]
 )
 {
     node(POD_LABEL)
