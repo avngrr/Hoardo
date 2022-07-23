@@ -1,4 +1,4 @@
-pipeline {
+
     podTemplate(inheritFrom: 'default')
         {
             node(POD_LABEL){
@@ -36,4 +36,3 @@ pipeline {
             }
         }  
     }    
-}
