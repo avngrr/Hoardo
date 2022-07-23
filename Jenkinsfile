@@ -1,4 +1,5 @@
-podTemplate(inheritFrom: 'default')
+podTemplate(inheritFrom: 'default',
+containers: [containerTemplate(image: 'docker', name: 'docker', command: 'cat', ttyEnabled: true)])
 {
     node(POD_LABEL)
     {
@@ -9,29 +10,20 @@ podTemplate(inheritFrom: 'default')
             }
             stage("Build image") 
             {
-
+                container('docker')
+                {
                     script 
                     {
                         myapp = docker.build("avngr/hoardo:${env.BUILD_ID}", "./src/Server")
-                    }
-                
-            }
-            stage("Push image") 
-            {
-
-                    script 
-                    {
                         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') 
                         {
                                 myapp.push("latest")
                                 myapp.push("${env.BUILD_ID}")
                         }
                     }
-                
-            }        
-
-        
-            stage('List Configmaps') 
+                }
+            }             
+            stage('push to kubernetes cluster') 
             {
                 withKubeConfig([namespace: "hoardo"]) 
                 {
