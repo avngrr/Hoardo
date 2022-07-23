@@ -29,7 +29,6 @@ pipeline {
                 }
             }
         }        
-        stage('Deploy to GKE') {
             steps{
                   podTemplate(inheritFrom: 'default')
                   {
@@ -42,7 +41,7 @@ pipeline {
                             }
                         }
                   }
-            }
+            
         }
     }    
 }
