@@ -26,7 +26,7 @@ podTemplate(
                     {
                         registryCredential = 'dockerhub' 
                         myapp = docker.build("avngr/hoardo:${env.BUILD_ID}")
-                        docker.withRegistry('https://registry.hub.docker.com', registryCredential) 
+                        docker.withRegistry('', registryCredential) 
                         {
                                 myapp.push("latest")
                                 myapp.push("${env.BUILD_ID}")
