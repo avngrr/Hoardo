@@ -20,7 +20,7 @@ podTemplate(
             }
             stage("Build image") 
             {
-                container('docker-build')
+                container('docker')
                 {
                     script 
                     {
