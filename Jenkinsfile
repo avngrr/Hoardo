@@ -2,8 +2,6 @@ podTemplate(inheritFrom: 'default')
 {
     node(POD_LABEL)
     {
-        stages 
-        {
             stage("Checkout code") 
             {
                 steps 
@@ -44,6 +42,6 @@ podTemplate(inheritFrom: 'default')
                     sh 'kubectl apply -f ./src/Server/api-deploy.yml'
                 }
             }
-        }
+        
     }  
 }    
