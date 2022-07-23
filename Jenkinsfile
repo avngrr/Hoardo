@@ -1,5 +1,5 @@
 podTemplate(
-  inheritFrom: 'default',
+  inheritFrom: 'myjenkins',
   containers: [
     containerTemplate(
       name: 'docker',
