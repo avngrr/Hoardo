@@ -1,5 +1,5 @@
 podTemplate(
-  serviceAccountName: 'jenkins-robot',
+  serviceAccount: 'jenkins-robot',
   containers: [
     containerTemplate(
       name: 'docker',
