@@ -36,7 +36,7 @@ podTemplate(
             }             
             stage('push to kubernetes cluster') 
             {
-                withKubeConfig([namespace: "hoardo"]) 
+                withKubeConfig([credentialsId: 'ServiceAccount', namespace: "hoardo"]) 
                 {
                     sh 'kubectl get pods'
                 }
