@@ -1,11 +1,7 @@
 pipeline {
-    agent any
-    environment {
-        PROJECT_ID = 'PROJECT-ID'
-        CLUSTER_NAME = 'CLUSTER-NAME'
-        LOCATION = 'CLUSTER-LOCATION'
-        CREDENTIALS_ID = 'gke'
-    }
+    podTemplate(inheritFrom: 'default')
+        {
+            node(POD_LABEL){
     stages {
         stage("Checkout code") {
             steps {
@@ -30,18 +26,14 @@ pipeline {
             }
         }        
 
-                  podTemplate(inheritFrom: 'default')
-                  {
-                        node(POD_LABEL){
-                            stage('List Configmaps') {
-                                withKubeConfig([namespace: "hoardo"]) {
-                                  sh 'kubectl get configmap'
-                                  sh 'kubectl apply -f ./src/Server/api-deploy.yml'
-                                }
-                            }
-                        }
-                  }
-            
         
+                stage('List Configmaps') {
+                    withKubeConfig([namespace: "hoardo"]) {
+                        sh 'kubectl get configmap'
+                        sh 'kubectl apply -f ./src/Server/api-deploy.yml'
+                    }
+                }
+            }
+        }  
     }    
 }
