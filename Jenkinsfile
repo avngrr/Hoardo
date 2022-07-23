@@ -26,7 +26,11 @@ podTemplate(
                     {
                         registryCredential = 'dockerhub' 
                         myapp = docker.build("avngr/hoardo:${env.BUILD_ID}", "./src/Server")
-                        
+                        docker.withRegistry('https://registry.hub.docker.com', registryCredential) 
+                        {
+                                myapp.push("latest")
+                                myapp.push("${env.BUILD_ID}")
+                        }
                     }
                 }
             }             
@@ -34,7 +38,7 @@ podTemplate(
             {
                 withKubeConfig([namespace: "hoardo"]) 
                 {
-                    
+                    sh 'kubectl apply -f ./src/Server/api-deploy.yml'
                 }
             }
         
