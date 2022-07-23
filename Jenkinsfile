@@ -36,7 +36,10 @@ podTemplate(
             }             
             stage('push to kubernetes cluster') 
             {
-                sh 'kubectl get pods'
+                withKubeConfig([namespace: "hoardo"]) 
+                {
+                    sh 'kubectl get pods'
+                }
             }
         
     }  
