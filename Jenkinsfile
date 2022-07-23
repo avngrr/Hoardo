@@ -1,5 +1,4 @@
 podTemplate(
-  inheritFrom: 'jenkins-robot',
   containers: [
     containerTemplate(
       name: 'docker',
