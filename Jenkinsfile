@@ -1,8 +1,18 @@
-podTemplate(inheritFrom: 'default',
-containers: [containerTemplate(image: 'docker', name: 'docker', command: 'cat', ttyEnabled: true)],
-volumes: [
-    hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock')
-  ])
+podTemplate(
+  inheritFrom: 'default',
+  containers: [
+    containerTemplate(
+      name: 'docker',
+      image: 'docker',
+      command: 'cat',
+      ttyEnabled: true)],
+  volumes: [
+    hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock'),
+    hostPathVolume(hostPath: '/usr/bin/kubectl', mountPath: '/usr/bin/kubectl'),
+    secretVolume(mountPath: '/etc/kubernetes', secretName: 'cluster-admin')],
+  annotations: [
+      podAnnotation(key: "development", value: appName)]
+)
 {
     node(POD_LABEL)
     {
@@ -13,7 +23,7 @@ volumes: [
             }
             stage("Build image") 
             {
-                container('docker')
+                container('docker-build')
                 {
                     script 
                     {
