@@ -4,6 +4,7 @@ namespace Domain.Entities.Tv;
 public class Episode : EntityBase
 {
     public int FileId { get; set; }
+    public virtual MediaFileInfo FileInfo { get; set; }
     public bool HasFile => FileId > 0;
     public int SeasonId { get; set; }
     public int EpisodeNumber { get; set; }

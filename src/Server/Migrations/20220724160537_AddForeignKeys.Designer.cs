@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Server.Contexts;
 
@@ -11,9 +12,10 @@ using Server.Contexts;
 namespace Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220724160537_AddForeignKeys")]
+    partial class AddForeignKeys
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,8 +58,6 @@ namespace Server.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RootFolderId");
 
                     b.ToTable("Files");
                 });
@@ -249,17 +249,6 @@ namespace Server.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Series");
-                });
-
-            modelBuilder.Entity("Domain.Entities.MediaFileInfo", b =>
-                {
-                    b.HasOne("Domain.Entities.RootFolder", "RootFolder")
-                        .WithMany()
-                        .HasForeignKey("RootFolderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("RootFolder");
                 });
 
             modelBuilder.Entity("Domain.Entities.Movies.Movie", b =>

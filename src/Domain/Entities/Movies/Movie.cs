@@ -2,5 +2,6 @@
 public class Movie : MediaInfo
 {
     public int FileId { get; set; }
+    public virtual MediaFileInfo FileInfo { get; set; }
     public bool HasFile => FileId > 0;
 }
