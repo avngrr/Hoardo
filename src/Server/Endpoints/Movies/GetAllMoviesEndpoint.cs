@@ -1,34 +1,32 @@
-﻿using Application.Features.Movies.Queries;
+﻿using Application.Common.Interfaces.Movies;
+using Application.Features.Movies.Queries;
 using Application.Features.Movies.Responses;
+using Application.Mappings.Movies;
 using FastEndpoints;
 using Microsoft.AspNetCore.Authorization;
-using Shared.Wrappers;
-using MediatR;
-using Application.Common.Interfaces.Repository;
-using Domain.Entities.Movies;
-using AutoMapper;
 
 namespace Server.Endpoints.Movies;
 
 [HttpGet("movies"), AllowAnonymous]
 public class GetAllMoviesEndpoint : Endpoint<GetAllPagedMoviesQuery, GetAllPagedMovieResponse>
 {
-    private readonly IUnitOfWork _unitOfWork;
-    private readonly IMapper _mapper;
-    public GetAllMoviesEndpoint(IUnitOfWork unitOfWork, IMapper mapper)
+    private readonly IMovieService _movieService;
+    public GetAllMoviesEndpoint(IMovieService movieService)
     {
-        _unitOfWork = unitOfWork;
-        _mapper = mapper;   
+        _movieService = movieService;
     }
 
     public override async Task HandleAsync(GetAllPagedMoviesQuery query, CancellationToken cancellationToken)
     {
-        var moviesList = await _unitOfWork.Repository<Movie>().GetPagedResponseAsync(query.PageNumber, query.PageSize);
-        var mappedMoviesList = _mapper.Map<List<MovieResponse>>(moviesList);
+        var moviesList = await _movieService.GetAllPaged(query.PageNumber, query.PageSize);
         GetAllPagedMovieResponse result = new GetAllPagedMovieResponse()
         {
-            MovieList = new PagedList<MovieResponse>(mappedMoviesList, mappedMoviesList.Count, query.PageNumber, query.PageSize)
+            MovieList = moviesList.Select(m => m.ToMovieResponse()).ToList(),
+            TotalCount = moviesList.TotalCount,
+            PageSize = moviesList.PageSize,
+            TotalPages = moviesList.TotalPages,
+            CurrentPage = moviesList.CurrentPage
         };
-        await SendOkAsync(cancellationToken);
+        await SendOkAsync(result, cancellationToken);
     }
 }

@@ -1,12 +1,21 @@
 ﻿using Application.Features.Movies.Responses;
-using AutoMapper;
 using Domain.Entities.Movies;
 
 namespace Application.Mappings.Movies;
-public class MovieMappings : Profile
+public static class MovieMappings
 {
-    public MovieMappings()
+    public static MovieResponse ToMovieResponse(this Movie movie)
     {
-        CreateMap<Movie, MovieResponse>();
+        return new MovieResponse
+        {
+            ImdbId = movie.ImdbId,
+            Title = movie.Title,
+            CleanTitle = movie.CleanTitle,
+            Overview = movie.Overview,
+            Monitored = movie.Monitored,
+            Year = movie.Year,
+            Genres = movie.Genres,
+            Added = movie.Added
+        };
     }
 }

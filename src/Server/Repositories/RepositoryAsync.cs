@@ -2,6 +2,7 @@
 using Domain.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Server.Contexts;
+using Shared.Wrappers;
 
 namespace Server.Repositories;
 
@@ -31,13 +32,13 @@ public class RepositoryAsync<T> : IRepositoryAsync<T> where T : EntityBase
 
     public async Task<T> GetByIdAsync(object id) => await _context.Set<T>().FindAsync(id);
 
-    public async Task<List<T>> GetPagedResponseAsync(int pageNumber, int pageSize)
+    public async Task<PagedList<T>> GetPagedResponseAsync(int pageNumber, int pageSize)
     {
-        return await _context.Set<T>()
+        return new PagedList<T>(await _context.Set<T>()
             .Skip((pageNumber - 1) * pageSize)
             .Take(pageSize)
             .AsNoTracking()
-            .ToListAsync();
+            .ToListAsync(), _context.Set<T>().Count(), pageNumber, pageSize);
     }
 
     public Task UpdateAsync(T entity)

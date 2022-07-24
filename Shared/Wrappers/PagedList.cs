@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Shared.Wrappers;
+﻿namespace Shared.Wrappers;
 
 public class PagedList<T> : List<T>
 {
@@ -16,7 +10,8 @@ public class PagedList<T> : List<T>
     public bool HasPrevious => CurrentPage > 1;
     public bool HasNext => CurrentPage < TotalPages;
 
-    public PagedList(List<T> items, int count, int pageNumber, int pageSize)    {
+    public PagedList(List<T> items, int count, int pageNumber, int pageSize)
+    {
         CurrentPage = pageNumber;
         PageSize = pageSize;
         TotalCount = count;
@@ -24,7 +19,8 @@ public class PagedList<T> : List<T>
         AddRange(items);
     }
 
-    public static PagedList<T> ToPagedList(IQueryable<T> source, int pageNumber, int pageSize){
+    public static PagedList<T> ToPagedList(IQueryable<T> source, int pageNumber, int pageSize)
+    {
         int count = source.Count();
         List<T> items = source.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
         return new PagedList<T>(items, count, pageNumber, pageSize);

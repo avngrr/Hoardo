@@ -1,11 +1,10 @@
-﻿using Application.Features.Movies.Queries;
-using Application.Features.Movies.Responses;
-using Domain.Entities.Movies;
+﻿using Domain.Entities.Movies;
 using Shared.Wrappers;
 
 namespace Application.Common.Interfaces.Movies;
 public interface IMovieService
 {
+    Task AddAsync(string imdbId);
     Task AddAsync(Movie movie);
     Task<Movie> GetAsync(int id);
     Task DeleteAsync(int id);
