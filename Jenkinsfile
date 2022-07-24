@@ -38,7 +38,6 @@ podTemplate(
             {
                 withKubeConfig([credentialsId: 'ServiceAccount', namespace: "hoardo"]) 
                 {
-                    sh 'kubectl create namespace hoardo'
                     sh 'kubectl apply -f ./src/Server/api-deploy.yml'
                 }
             }
