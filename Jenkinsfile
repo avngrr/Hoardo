@@ -36,8 +36,9 @@ podTemplate(
             }             
             stage('push to kubernetes cluster') 
             {
-                withKubeConfig([credentialsId: 'ServiceAccount', namespace: "jenkins"]) 
+                withKubeConfig([credentialsId: 'ServiceAccount', namespace: "hoardo"]) 
                 {
+                    sh 'kubectl create namespace hoardo'
                     sh 'kubectl apply -f ./src/Server/api-deploy.yml'
                 }
             }
