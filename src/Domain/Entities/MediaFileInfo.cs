@@ -1,7 +1,7 @@
 ﻿using Domain.Contracts;
 
 namespace Domain.Entities;
-public class MediaFileInfo : EntityBase<int>
+public class MediaFileInfo : EntityBase
 {
     public string RelativePath { get; set; }
     public string Path { get; set; }

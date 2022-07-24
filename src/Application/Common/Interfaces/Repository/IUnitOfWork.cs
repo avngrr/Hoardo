@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Contracts;
 
 namespace Application.Common.Interfaces.Repository;
-public interface IUnitOfWork<TId> : IDisposable
+public interface IUnitOfWork : IDisposable
 {
-    IRepositoryAsync<T, TId> Repository<T>() where T : EntityBase<TId>;
+    IRepositoryAsync<T> Repository<T>() where T : EntityBase;
     Task CreateTransaction();
     Task Commit();
     Task Rollback();

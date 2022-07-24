@@ -1,6 +1,6 @@
 ﻿namespace Domain.Contracts;
 
-public interface IEntity<TId>
+public interface IEntity
 {
-    public TId Id { get; set; }
+    public int Id { get; set; }
 }

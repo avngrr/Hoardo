@@ -6,7 +6,7 @@ using System.Collections;
 using Microsoft.EntityFrameworkCore.Storage;
 namespace Server.Repositories;
 
-public class UnitOfWork<TId> : IUnitOfWork<TId>
+public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _context;
     private readonly IServiceProvider _provider;
@@ -41,16 +41,16 @@ public class UnitOfWork<TId> : IUnitOfWork<TId>
     {
         return await _context.SaveChangesAsync(cancellationToken);
     }
-    public IRepositoryAsync<T, TId> Repository<T>() where T : EntityBase<TId>
+    public IRepositoryAsync<T> Repository<T>() where T : EntityBase
     {
         if (_repositories == null) _repositories = new Hashtable();
         var type = typeof(T).Name;
         if (!_repositories.ContainsKey(type))
         {
-            IRepositoryAsync<T, TId> repository = (IRepositoryAsync<T, TId>)_provider.GetService(typeof(IRepositoryAsync<T, TId>));
+            IRepositoryAsync<T> repository = (IRepositoryAsync<T>)_provider.GetService(typeof(IRepositoryAsync<T>));
             _repositories.Add(type, repository);
         }
-        return _repositories[type] as IRepositoryAsync<T, TId>;
+        return _repositories[type] as IRepositoryAsync<T>;
     }
 
     public void Dispose()

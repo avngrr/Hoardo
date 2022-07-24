@@ -1,7 +1,7 @@
 ﻿using Domain.Contracts;
 
 namespace Domain.Entities;
-public abstract class MediaInfo : EntityBase<int>
+public abstract class MediaInfo : EntityBase
 {
     public string ImdbId { get; set; }
     public string Title { get; set; }

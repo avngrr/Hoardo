@@ -1,7 +1,7 @@
 ﻿using Domain.Contracts;
 
 namespace Domain.Entities.Tv;
-public class Episode : EntityBase<int>
+public class Episode : EntityBase
 {
     public int FileId { get; set; }
     public bool HasFile => FileId > 0;

@@ -7,8 +7,8 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddRepos(this IServiceCollection services)
     {
-        services.AddTransient(typeof(IRepositoryAsync<,>), typeof(RepositoryAsync<,>));
-        services.AddTransient(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
+        services.AddTransient(typeof(IRepositoryAsync<>), typeof(RepositoryAsync<>));
+        services.AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork));
         return services;
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Domain.Contracts;
 
 namespace Application.Common.Interfaces.Repository;
-public interface IRepositoryAsync<T, TId> where T : EntityBase<TId>
+public interface IRepositoryAsync<T> where T : EntityBase
 {
     Task<T> GetByIdAsync(object id);
     Task<List<T>> GetAllAsync();

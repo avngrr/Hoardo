@@ -5,7 +5,7 @@ using Server.Contexts;
 
 namespace Server.Repositories;
 
-public class RepositoryAsync<T, TId> : IRepositoryAsync<T, TId> where T : EntityBase<TId>
+public class RepositoryAsync<T> : IRepositoryAsync<T> where T : EntityBase
 {
     public ApplicationDbContext _context;
     public RepositoryAsync(ApplicationDbContext context)

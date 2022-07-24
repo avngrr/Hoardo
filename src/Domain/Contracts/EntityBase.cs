@@ -1,5 +1,5 @@
 ﻿namespace Domain.Contracts;
-public abstract class EntityBase<TId> : IEntity<TId>
+public abstract class EntityBase : IEntity
 {
-    public TId Id { get; set; }
+    public int Id { get; set; }
 }
