@@ -18,4 +18,18 @@ public static class MovieMappings
             Added = movie.Added
         };
     }
+    public static Movie ToMovie(this MovieResponse response)
+    {
+        return new Movie
+        {
+            ImdbId = response.ImdbId,
+            Title = response.Title,
+            CleanTitle = response.CleanTitle,
+            Overview = response.Overview,
+            Monitored = response.Monitored,
+            Year = response.Year,
+            Genres = response.Genres,
+            Added = response.Added
+        };
+    }
 }

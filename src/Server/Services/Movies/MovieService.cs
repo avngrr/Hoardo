@@ -12,23 +12,24 @@ public class MovieService : IMovieService
     {
         _unitOfWork = unitOfWork;
     }
-    public Task AddAsync(Movie movie)
+    public async Task AddAsync(Movie movie)
     {
-        throw new NotImplementedException();
+        await _unitOfWork.Repository<Movie>().AddAsync(movie);
     }
-
     public Task AddAsync(string imdbId)
     {
+        //Search IMDB for the movie and fill all the metadata and add it to db.
         throw new NotImplementedException();
     }
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        Movie m = await GetAsync(id);
+        await _unitOfWork.Repository<Movie>().DeleteAsync(m);
     }
 
-    public Task<List<Movie>> GetAllAsync()
+    public async Task<List<Movie>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _unitOfWork.Repository<Movie>().GetAllAsync();
     }
 
     public async Task<PagedList<Movie>> GetAllPaged(int pageNumber, int pageSize)
@@ -36,13 +37,13 @@ public class MovieService : IMovieService
         return await _unitOfWork.Repository<Movie>().GetPagedResponseAsync(pageNumber, pageSize);
     }
 
-    public Task<Movie> GetAsync(int id)
+    public async Task<Movie> GetAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _unitOfWork.Repository<Movie>().GetByIdAsync(id); 
     }
 
-    public Task UpdateAsync(int id)
+    public async Task UpdateAsync(Movie movie)
     {
-        throw new NotImplementedException();
+        await _unitOfWork.Repository<Movie>().UpdateAsync(movie);
     }
 }

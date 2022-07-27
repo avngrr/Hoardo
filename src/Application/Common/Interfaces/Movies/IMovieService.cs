@@ -8,7 +8,7 @@ public interface IMovieService
     Task AddAsync(Movie movie);
     Task<Movie> GetAsync(int id);
     Task DeleteAsync(int id);
-    Task UpdateAsync(int id);
+    Task UpdateAsync(Movie movie);
     Task<List<Movie>> GetAllAsync();
     Task<PagedList<Movie>> GetAllPaged(int pageNumber, int pageSize);
 }
