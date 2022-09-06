@@ -1,9 +1,9 @@
-﻿using Application.Common.Interfaces.Repository;
+﻿using System.Collections;
+using Application.Common.Interfaces.Repository;
 using Domain.Contracts;
-using Server.Contexts;
-using System.Collections;
 //using System.Data.Entity;
 using Microsoft.EntityFrameworkCore.Storage;
+using Server.Contexts;
 namespace Server.Repositories;
 
 public class UnitOfWork : IUnitOfWork

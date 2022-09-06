@@ -12,4 +12,5 @@ public abstract class MediaInfo : EntityBase
     public List<string> Genres { get; set; }
     public DateTime Added { get; set; }
     public bool HasFile { get; set; }
+    public bool HasSeen { get; set; } = false;
 }

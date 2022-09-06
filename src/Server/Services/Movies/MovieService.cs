@@ -15,6 +15,7 @@ public class MovieService : IMovieService
     public async Task AddAsync(Movie movie)
     {
         await _unitOfWork.Repository<Movie>().AddAsync(movie);
+        await _unitOfWork.Save(CancellationToken.None);
     }
     public Task AddAsync(string imdbId)
     {
@@ -25,6 +26,7 @@ public class MovieService : IMovieService
     {
         Movie m = await GetAsync(id);
         await _unitOfWork.Repository<Movie>().DeleteAsync(m);
+        await _unitOfWork.Save(CancellationToken.None);
     }
 
     public async Task<List<Movie>> GetAllAsync()
@@ -39,11 +41,12 @@ public class MovieService : IMovieService
 
     public async Task<Movie> GetAsync(int id)
     {
-        return await _unitOfWork.Repository<Movie>().GetByIdAsync(id); 
+        return await _unitOfWork.Repository<Movie>().GetByIdAsync(id);
     }
 
     public async Task UpdateAsync(Movie movie)
     {
         await _unitOfWork.Repository<Movie>().UpdateAsync(movie);
+        await _unitOfWork.Save(CancellationToken.None);
     }
 }

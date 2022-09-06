@@ -77,7 +77,7 @@ namespace Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("FileId")
+                    b.Property<int?>("FileId")
                         .HasColumnType("int");
 
                     b.Property<string>("Genres")
@@ -85,6 +85,9 @@ namespace Server.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("HasFile")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HasSeen")
                         .HasColumnType("bit");
 
                     b.Property<string>("ImdbId")
@@ -108,7 +111,8 @@ namespace Server.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("FileId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[FileId] IS NOT NULL");
 
                     b.ToTable("Movies");
                 });
@@ -145,7 +149,7 @@ namespace Server.Migrations
                     b.Property<int>("EpisodeNumber")
                         .HasColumnType("int");
 
-                    b.Property<int>("FileId")
+                    b.Property<int?>("FileId")
                         .HasColumnType("int");
 
                     b.Property<bool>("Monitored")
@@ -165,7 +169,8 @@ namespace Server.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("FileId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[FileId] IS NOT NULL");
 
                     b.HasIndex("SeasonId");
 
@@ -222,6 +227,9 @@ namespace Server.Migrations
                     b.Property<bool>("HasFile")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("HasSeen")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ImdbId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -266,9 +274,7 @@ namespace Server.Migrations
                 {
                     b.HasOne("Domain.Entities.MediaFileInfo", "FileInfo")
                         .WithOne()
-                        .HasForeignKey("Domain.Entities.Movies.Movie", "FileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Domain.Entities.Movies.Movie", "FileId");
 
                     b.Navigation("FileInfo");
                 });
@@ -277,9 +283,7 @@ namespace Server.Migrations
                 {
                     b.HasOne("Domain.Entities.MediaFileInfo", "FileInfo")
                         .WithOne()
-                        .HasForeignKey("Domain.Entities.Tv.Episode", "FileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Domain.Entities.Tv.Episode", "FileId");
 
                     b.HasOne("Domain.Entities.Tv.Season", null)
                         .WithMany("Episodes")
