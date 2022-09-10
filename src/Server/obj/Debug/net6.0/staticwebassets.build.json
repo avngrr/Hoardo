@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z/mSEEvtr8EB+A02qwZjrHOtxKahXiMvvz3tnibYjWs=",
+  "Hash": "B1Lq74mA5rvdJoURZLPd8NCQrwL7O1VPThHXaYPVZsQ=",
   "Source": "Server",
   "BasePath": "_content/Server",
   "Mode": "Default",
@@ -7235,23 +7235,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/bootstrap/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

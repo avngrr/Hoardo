@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2TPNo8gGYSHXy1gh384j/uPnPx7rKns0exjVM5wBcv+kX3djaS1DOwRSsM+OkNTgiwnmk5u8X1lWhf7tpnCmhA==",
+  "dgSpecHash": "xX+MzzuA3A2SwkLIYREey5+4Vv9Ibymw7sF0/8QNR/t3/FNdREwilPFAqnEw97eGiViPS7VBCDJqiEdEdcMGkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\Client.WpfApp\\Client.WpfApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",

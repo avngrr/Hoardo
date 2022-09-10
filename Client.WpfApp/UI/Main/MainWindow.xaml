@@ -7,77 +7,34 @@
         xmlns:tvshows="clr-namespace:Client.WpfApp.UI.TvShows"
         xmlns:home="clr-namespace:Client.WpfApp.UI.Home"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" 
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" Background="#FFEAEBEC"
         Title="MainWindow" Height="740" Width="1280">
+    <Window.Resources>
+        <Style x:Key="NavigationContentStyle" TargetType="ContentControl">
+            <Setter Property="ContentTemplate" Value="{StaticResource HomeViewTemplate}"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=NavigationMenuListBox, Path=SelectedItem}"
+                     Value="Movies">
+                    <Setter Property="ContentTemplate" Value="{StaticResource MoviesViewTemplate }"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=NavigationMenuListBox, Path=SelectedItem}" 
+                     Value="TvShows">
+                    <Setter Property="ContentTemplate" Value="{StaticResource TvShowsViewTemplate}"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
+        <!-- Always add column and row definitions. -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Border CornerRadius="10 0 0 10">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                    <GradientStop Color="#223266" Offset="0"/>
-                    <GradientStop Color="#27396b" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-            <StackPanel >
-                <Button Style="{StaticResource menuButton}" Command="{Binding NavigateHome}">
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel Orientation="Horizontal" >
-                            <TextBlock Width="250" Text="Hoardo" Style="{StaticResource menuButtonHeader}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Separator Height="1" Margin="20 30" Background="#46558a"/>
-                <Button Style="{StaticResource menuButton}" Command="{Binding NavigateHome}">
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Home" Style="{StaticResource menuButtonText}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Style="{StaticResource menuButton}" Command="{Binding NavigateMovies}">
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Film" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Movies" Style="{StaticResource menuButtonText}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Style="{StaticResource menuButton}" Command="{Binding NavigateTvShows}">
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Tv" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Tv Shows" Style="{StaticResource menuButtonText}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Button>
-
-            </StackPanel>
-        </Border>
-        <Border CornerRadius="0 10 10 0" Grid.Column="1" MouseDown="Border_MouseDown" Grid.ColumnSpan="4">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
-                    <GradientStop Color="#41518f" Offset="0"/>
-                    <GradientStop Color="#2c386c" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-            <ContentControl Content="{Binding CurrentViewModel}">
-                <ContentControl.Resources>
-                    <DataTemplate DataType="{x:Type home:HomeViewModel}">
-                        <home:Home />
-                    </DataTemplate>
-                    <DataTemplate DataType="{x:Type movies:MoviesViewModel}">
-                        <movies:Movies />
-                    </DataTemplate>
-                    <DataTemplate DataType="{x:Type tvshows:TvShowsViewModel}">
-                        <tvshows:TvShows />
-                    </DataTemplate>
-                </ContentControl.Resources>
-            </ContentControl>
-        </Border>
+        <ListBox x:Name="NavigationMenu"
+                 Style="{StaticResource NavigationListBoxStyle}"
+                 ItemContainerStyle="{DynamicResource NavigationListBoxItemStyle}"
+                 ItemTemplate="{DynamicResource NavigationDataTemplate}"
+                 ItemsSource="{StaticResource NavigationMenuItems}" />
+        <ContentControl Grid.Column="1" Style="{StaticResource NavigationContentStyle}" />
     </Grid>
 </Window>
