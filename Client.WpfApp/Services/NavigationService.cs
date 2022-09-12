@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Windows.Input;
 using Client.WpfApp.Commands;
 using Client.WpfApp.UI.Base;
 
@@ -35,9 +36,16 @@ public class NavigationService : INavigationService
         var type = typeof(T).Name;
         if (!_navigationCommands.ContainsKey(type))
         {
-            NavigateCommand<T> repository = (NavigateCommand<T>)_provider.GetService(typeof(NavigateCommand<T>));
-            _navigationCommands.Add(type, repository);
+            NavigateCommand<T> command = (NavigateCommand<T>)_provider.GetService(typeof(NavigateCommand<T>));
+            _navigationCommands.Add(type, command);
         }
         return _navigationCommands[type] as NavigateCommand<T>;
+    }
+
+    public ICommand NavigateCommand(ViewModelBase v)
+    {
+        Type navType = typeof(NavigateCommand<>);
+        var command = navType.MakeGenericType(v.GetType());
+        return (ICommand)Activator.CreateInstance(command);
     }
 }

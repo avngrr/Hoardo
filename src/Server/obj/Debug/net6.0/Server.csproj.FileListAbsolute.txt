@@ -98,3 +98,4 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\refin
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\Server.pdb
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\ref\Server.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\CommunityToolkit.Mvvm.dll

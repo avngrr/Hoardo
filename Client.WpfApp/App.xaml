@@ -7,12 +7,10 @@
                     xmlns:tvshows="clr-namespace:Client.WpfApp.UI.TvShows"
                     xmlns:home="clr-namespace:Client.WpfApp.UI.Home">
     <Application.Resources>
-        
         <ResourceDictionary>
             <SolidColorBrush x:Key="PrimaryDarkBrush" Color="#FF0D2738"/>
             <SolidColorBrush x:Key="PrimaryLightBrush" Color="#FF1F90FF"/>
-            <Style x:Key="NavigationListBoxStyle" 
-           TargetType="{x:Type ListBox}">
+            <Style x:Key="NavigationListBoxStyle" TargetType="{x:Type ListBox}">
                 <Setter Property="Background"
                 Value="{StaticResource PrimaryDarkBrush}"/>
                 <Setter Property="ScrollViewer.HorizontalScrollBarVisibility"
@@ -43,36 +41,27 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            <Style x:Key="NavigationListBoxItemStyle" 
-           TargetType="{x:Type ListBoxItem}" >
-                <Setter Property="Background" 
-                Value="Transparent"/>
-                <Setter Property="Foreground"
-                Value="{StaticResource PrimaryLightBrush}"/>
-                <Setter Property="HorizontalContentAlignment"
-                Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
-                <Setter Property="VerticalContentAlignment"
-                Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+            <Style x:Key="NavigationListBoxItemStyle" TargetType="{x:Type ListBoxItem}" >
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="{StaticResource PrimaryLightBrush}"/>
+                <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type ListBoxItem}">
                             <Border x:Name="Bd"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}" 
-                        Background="{TemplateBinding Background}"
-                        Padding="{TemplateBinding Padding}"
-                        SnapsToDevicePixels="true">
-                                <ContentPresenter HorizontalAlignment=
-                                    "{TemplateBinding HorizontalContentAlignment}"
-                                    VerticalAlignment=
-                                    "{TemplateBinding VerticalContentAlignment}"
-                                    SnapsToDevicePixels=
-                                    "{TemplateBinding SnapsToDevicePixels}"/>
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    Background="{TemplateBinding Background}"
+                                    Padding="{TemplateBinding Padding}"
+                                    SnapsToDevicePixels="true">
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsSelected" Value="true">
-                                    <Setter TargetName="Bd" Property="Background" 
-                         Value="{StaticResource PrimaryLightBrush}"/>
+                                    <Setter TargetName="Bd" Property="Background" Value="{StaticResource PrimaryLightBrush}"/>
                                     <Setter Property="Foreground" Value="White"/>
                                 </Trigger>
                                 <MultiTrigger>
@@ -80,13 +69,11 @@
                                         <Condition Property="IsSelected" Value="true"/>
                                         <Condition Property="Selector.IsSelectionActive" Value="false"/>
                                     </MultiTrigger.Conditions>
-                                    <Setter Property="Background" TargetName="Bd" 
-                         Value="{StaticResource PrimaryLightBrush}"/>
+                                    <Setter Property="Background" TargetName="Bd" Value="{StaticResource PrimaryLightBrush}"/>
                                     <Setter Property="Foreground" Value="White"/>
                                 </MultiTrigger>
                                 <Trigger Property="IsEnabled" Value="false">
-                                    <Setter Property="Foreground" 
-                         Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -101,10 +88,10 @@
                         <Setter TargetName="MenuItemIcon" Property="Kind" Value="Home" />
                     </DataTrigger>
                     <DataTrigger Binding="{Binding}" Value="Movies">
-                        <Setter TargetName="MenuItemIcon" Property="Kind" Value="Email"/>
+                        <Setter TargetName="MenuItemIcon" Property="Kind" Value="LocalMovies"/>
                     </DataTrigger>
                     <DataTrigger Binding="{Binding}" Value="TvShows">
-                        <Setter TargetName="MenuItemIcon" Property="Kind" Value="Cloud"/>
+                        <Setter TargetName="MenuItemIcon" Property="Kind" Value="Tv"/>
                     </DataTrigger>
                 </DataTemplate.Triggers>
             </DataTemplate>

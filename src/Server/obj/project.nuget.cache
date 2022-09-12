@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CPfcAgMFsIXmU7IODkvrfzFJR+PnHWMcUDiY2GO0KDRo2tadX4YDI9V1mSnP2ajT7ddiVIo+wKOTsDdfUkjLTw==",
+  "dgSpecHash": "GYxVOlpuHCtdrvE3gz450+lmQXzK2FAdiK0ULurGh567GrFce33UrQEhKmfM9edwWrMpvxxHiXCy5+5ngaBbjg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\fastendpoints\\4.3.1\\fastendpoints.4.3.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\fastendpoints.swagger\\4.3.1\\fastendpoints.swagger.4.3.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",

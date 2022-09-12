@@ -9,6 +9,7 @@
     "assembly": {
       "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
+      "CommunityToolkit.Mvvm.dll": "sha256-ekk1Ai4t2xZ1GMf9KJS\/uHKy\/lXbCXhl6mzgbZT0juc=",
       "MediatR.dll": "sha256-5JP3MguhkAHQ+bz8WyGxc8bqkRX2InbWKVplJEsFzGQ=",
       "MediatR.Contracts.dll": "sha256-jbWZnge7bolAMw8ppWQLC7bKPAY6DjkJn2ezN9OXafU=",
       "MediatR.Extensions.Microsoft.DependencyInjection.dll": "sha256-blkFqVBGqO7GrdhrAXsMHPTRmzPouRK2+2BV\/23QKbc=",
@@ -201,19 +202,19 @@
       "mscorlib.dll": "sha256-wmk56X5dbt29rrFZKEFpOFjotkZA+JSxA4fqkgmBsOU=",
       "netstandard.dll": "sha256-CvlfDmNgFRYT7l\/xZKu91FlbTFyLG\/5cH7YX63k9ghE=",
       "System.Private.CoreLib.dll": "sha256-aF4imeOpA59D6F5qCLabzkeY7MvRZzNYzavhB\/bdxvM=",
-      "Application.dll": "sha256-Q1NAR3g2wXATWNDyNs7V9Tje1jo+RlkdTftS9ucCUlo=",
+      "Application.dll": "sha256-3tXLjkyXhfo3zrTUs\/kaWJNcDeMtH5sLUfhdiIBM1cU=",
       "Domain.dll": "sha256-aX3iOonruQ35as5iJ9MKZWAJx0ubMr+L5sddKgV82W4=",
       "Shared.dll": "sha256-DFxt5PDRS+us6VTH2rLKZ8tBhWd+liVhG\/pQN0xrJIo=",
-      "Client.dll": "sha256-VgKvsjpRxI8FaP5ThW1vag344DrNHraVQdo9xlvZ\/c8="
+      "Client.dll": "sha256-+7WmYyDf0AWmZIz4xx9PByB9ad0Wotas16hHpC\/dUPA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Application.pdb": "sha256-Bjv4mHKUw5d7yRJ3DSyX648Ft7u0faAyhQD6M\/j0aas=",
+      "Application.pdb": "sha256-vhSSiCYRRI3PZ2MfHnm+kg5nZVTEc2NeGRjFIyFKj\/Q=",
       "Domain.pdb": "sha256-XD8uUnnSt5TW+PrP0XWZfXeZWl4qkaqFaHCvSjB\/tJ0=",
       "Shared.pdb": "sha256-Mx1INqFO8fG6gvwJoZXq6KpHvtQwaS6CATvAMMH4pZk=",
-      "Client.pdb": "sha256-3s8OMyTYhDCvkKSGqcWEjfC9AJcd9RSCj\/EqQUZLna4="
+      "Client.pdb": "sha256-hXw\/d5fATfvPJ+eCx36E8rH3bFtUmEr8VxvPP\/cR+Sk="
     },
     "runtime": {
       "dotnet.6.0.7.9cosz7gn0n.js": "sha256-pvJcJ6jtDSfxgXm03QYRTm4aAi9PSzMSJODReHtvASY=",

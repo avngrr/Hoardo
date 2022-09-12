@@ -46,6 +46,14 @@
           }
         }
       },
+      "CommunityToolkit.Mvvm/8.0.0": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.1"
+          }
+        }
+      },
       "FastEndpoints/4.3.1": {
         "dependencies": {
           "FluentValidation": "11.1.0"
@@ -1200,6 +1208,7 @@
       "Client/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.7"
         },
         "runtime": {
@@ -1237,6 +1246,13 @@
       "sha512": "sha512-0asw5WxdCFh2OTi9Gv+oKyH9SzxwYQSnO8TV5Dd0GggovILzJW4UimP26JAcxc3yB5NnC5urooZ1BBs8ElpiBw==",
       "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Mvvm/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jiu2g5WUdXRwzhJkHB+B4JBKP5A5+fp8xKiW/ZQo5PI+DruI7MbPEcK9K/Aw0YzTiWRuG6CBluzYIWN5Eo7BkQ==",
+      "path": "communitytoolkit.mvvm/8.0.0",
+      "hashPath": "communitytoolkit.mvvm.8.0.0.nupkg.sha512"
     },
     "FastEndpoints/4.3.1": {
       "type": "package",

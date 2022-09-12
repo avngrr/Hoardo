@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using Client.WpfApp.Commands;
 using Client.WpfApp.UI.Base;
 
@@ -9,4 +10,5 @@ public interface INavigationService
 
     event Action CurrentViewModelChanged;
     NavigateCommand<T> NavigateCommand<T>() where T : ViewModelBase;
+    ICommand NavigateCommand(ViewModelBase v);
 }

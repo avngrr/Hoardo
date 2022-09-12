@@ -72,6 +72,14 @@
             },
             "Patterns": null
           },
+          "CommunityToolkit.Mvvm.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/CommunityToolkit.Mvvm.dll"
+            },
+            "Patterns": null
+          },
           "Domain.dll": {
             "Children": null,
             "Asset": {
@@ -1933,6 +1941,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Diagnostics.Process.dll.gz"
+            },
+            "Patterns": null
+          },
+          "CommunityToolkit.Mvvm.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/CommunityToolkit.Mvvm.dll.gz"
             },
             "Patterns": null
           },

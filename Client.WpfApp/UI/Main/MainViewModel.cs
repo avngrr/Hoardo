@@ -10,6 +10,10 @@ public class MainViewModel : ViewModelBase
 {
     public readonly INavigationService _navigationService;
     public ViewModelBase CurrentViewModel => _navigationService.CurrentViewModel;
+    public ICommand ChangeViewCommand(object parameter)
+    {
+        return _navigationService.NavigateCommand((ViewModelBase)parameter);
+    }
     public ICommand NavigateHome { get; private set; }
     public ICommand NavigateMovies { get; private set; }
     public ICommand NavigateTvShows { get; private set; }

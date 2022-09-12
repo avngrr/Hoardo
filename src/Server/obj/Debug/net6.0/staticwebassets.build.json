@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B1Lq74mA5rvdJoURZLPd8NCQrwL7O1VPThHXaYPVZsQ=",
+  "Hash": "lIFzoWvsKgJG98iMJSC6CXK4aCGcKRd8PjsspeamnZI=",
   "Source": "Server",
   "BasePath": "_content/Server",
   "Mode": "Default",
@@ -163,6 +163,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\Client.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\CommunityToolkit.Mvvm.dll",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/CommunityToolkit.Mvvm.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\lib\\net6.0\\CommunityToolkit.Mvvm.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.dll",
@@ -4126,6 +4143,23 @@
       "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Process.dll"
     },
     {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\7IHzNwaC.gz",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/CommunityToolkit.Mvvm.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\CommunityToolkit.Mvvm.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\CommunityToolkit.Mvvm.dll"
+    },
+    {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\7w7wylJk.gz",
       "SourceId": "Client",
       "SourceType": "Project",
@@ -7235,6 +7269,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

@@ -14,6 +14,7 @@ public static class MovieMappings
             CleanTitle = movie.CleanTitle,
             Overview = movie.Overview,
             Monitored = movie.Monitored,
+            Seen = movie.HasSeen,
             Year = movie.Year,
             Genres = movie.Genres,
             Added = movie.Added
@@ -28,6 +29,7 @@ public static class MovieMappings
             CleanTitle = response.CleanTitle,
             Overview = response.Overview,
             Monitored = response.Monitored,
+            HasSeen = response.Seen,
             Year = response.Year,
             Genres = response.Genres,
             Added = response.Added
@@ -42,6 +44,7 @@ public static class MovieMappings
             CleanTitle = command.Title,
             Overview = command.Overview,
             Monitored = command.Monitored,
+            HasSeen = command.Seen,
             Year = command.Year,
             Genres = command.Genres,
             Added = DateTime.Now

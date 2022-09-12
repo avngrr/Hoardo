@@ -13,11 +13,11 @@
         <Style x:Key="NavigationContentStyle" TargetType="ContentControl">
             <Setter Property="ContentTemplate" Value="{StaticResource HomeViewTemplate}"/>
             <Style.Triggers>
-                <DataTrigger Binding="{Binding ElementName=NavigationMenuListBox, Path=SelectedItem}"
+                <DataTrigger Binding="{Binding ElementName=NavigationMenu, Path=SelectedItem}"
                      Value="Movies">
                     <Setter Property="ContentTemplate" Value="{StaticResource MoviesViewTemplate }"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding ElementName=NavigationMenuListBox, Path=SelectedItem}" 
+                <DataTrigger Binding="{Binding ElementName=NavigationMenu, Path=SelectedItem}" 
                      Value="TvShows">
                     <Setter Property="ContentTemplate" Value="{StaticResource TvShowsViewTemplate}"/>
                 </DataTrigger>

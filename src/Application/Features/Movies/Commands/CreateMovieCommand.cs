@@ -6,5 +6,6 @@ public class CreateMovieCommand
     public string Overview { get; set; }
     public int Year { get; set; }
     public bool Monitored { get; set; }
+    public bool Seen { get; set; }
     public List<string> Genres { get; set; }
 }

@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Client.Wpf.Components.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:Client.Wpf.Components" xmlns:viewmodels="clr-namespace:Client.Wpf.ViewModels"
+             mc:Ignorable="d" 
+             >
+    <Grid Style="{DynamicResource MainMenuStyle}">
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="btnHome"
+                          Style="{DynamicResource MainMenuButtonStyle}"
+                          Command="{Binding NavCmd}" 
+                          CommandParameter="{x:Type viewmodels:HomeViewModel}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <iconPacks:PackIconMaterialDesign Grid.Column="0" VerticalAlignment="Center" Kind="Home" />
+                    <TextBlock Grid.Column="1" Text="Home" />
+                </Grid>
+            </Button>
+            <Button x:Name="btnMovies" 
+                          Style="{DynamicResource MainMenuButtonStyle}"
+                          Command="{Binding NavCmd}" 
+                          CommandParameter="{x:Type viewmodels:MoviesViewModel}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <iconPacks:PackIconMaterialDesign Grid.Column="0" VerticalAlignment="Center" Kind="LocalMovies" />
+                    <TextBlock Grid.Column="1" Text="Movies" />
+                </Grid>
+            </Button>
+            <Button x:Name="btnTv"
+                          Style="{DynamicResource MainMenuButtonStyle}"
+                          Command="{Binding NavCmd}" 
+                          CommandParameter="{x:Type viewmodels:TvViewModel}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <iconPacks:PackIconMaterialDesign Grid.Column="0" VerticalAlignment="Center" Kind="Tv" />
+                    <TextBlock Grid.Column="1" Text="Tvshows" />
+                </Grid>
+            </Button>
+        </StackPanel>                 
+    </Grid>
+</UserControl>
