@@ -10,9 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        <TextBlock Text="Movies" Grid.Row="0" FontSize="38" FontWeight="Bold" />
-        <ListView x:Name="MoviesList" Grid.Row="1" Height="Auto" ItemsSource="{Binding Movies}">
+        <TextBox Grid.Row="0" Width="200" Text="{Binding Path=SearchString,Mode=TwoWay}" HorizontalAlignment="Left" Height="20" AcceptsReturn="False" KeyDown="TextBox_KeyDown" />
+        <ListView x:Name="MoviesList" Visibility="{Binding SearchNotVisible}" Grid.Row="1" Height="Auto" ItemsSource="{Binding Movies}">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel  />
@@ -20,18 +21,65 @@
             </ListBox.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Background="White" Width="250">
+                    <Grid Background="White" Width="200">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="100" />
+                            <RowDefinition Height="250" />
+                            <RowDefinition Height="20" />
                             <RowDefinition Height="20" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding Path=Overview}" x:Name="Image" Grid.Row="0" />
+                        <Image Source="{Binding Path=ImageUrl}" Grid.Row="0" />
                         <TextBlock Text="{Binding Path=Title}" x:Name="Title" Grid.Row="1" />
                         <TextBlock Text="{Binding Path=Seen}" x:Name="Seen" Grid.Row="2" />
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0">Seen</Button>
+                            <Button Grid.Column="1">Delete</Button>
+                        </Grid>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ListView x:Name="SearchMoviesList" Visibility="{Binding SearchVisible}" Grid.Row="1" Height="Auto" ItemsSource="{Binding SearchMoviesList}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel  />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="White" Width="200">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="250" />
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding Path=ImageUrl}" Grid.Row="0" />
+                        <TextBlock Text="{Binding Path=Title}" x:Name="Title" Grid.Row="1" />
+                        <TextBlock Text="{Binding Path=Added}" x:Name="Seen" Grid.Row="2" />
+                        <Grid Grid.Row="3">
+                            <Button Command="{Binding DataContext.CmdAddMovie, ElementName=SearchMoviesList}" CommandParameter="{Binding Path=ImdbId}">Add</Button>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="23" IsEnabled="{Binding HasPrevious}" HorizontalAlignment="Left" Name="btnFirst" VerticalAlignment="Bottom" Width="40" Content="&lt;&lt;" Opacity="0.75"/>
+                <Button Height="23" IsEnabled="{Binding HasPrevious}" VerticalAlignment="Bottom" Name="btnPrev" Width="40" Opacity="0.75" Content="&lt;"/>
+                <Label x:Name="lblpageInformation" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="30" Width="100" VerticalContentAlignment="Center" VerticalAlignment="Bottom"/>
+                <Button Height="23" IsEnabled="{Binding HasNext}" HorizontalAlignment="Right" Name="btnNext" VerticalAlignment="Bottom" Width="40" Content="&gt;" Opacity="0.75"/>
+                <Button Height="23" IsEnabled="{Binding HasNext}" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Width="40" Name="btnLast" Opacity="0.75" Content="&gt;&gt;"/>
+                <!--<ComboBox x:Name="cbNumberOfRecords" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="120"  SelectedIndex="0" Opacity="0.75"/>-->
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lIFzoWvsKgJG98iMJSC6CXK4aCGcKRd8PjsspeamnZI=",
+  "Hash": "yLOO4+0hdWKoC9Smy/XnJyKcTog6eFGZjlXccXeksyo=",
   "Source": "Server",
   "BasePath": "_content/Server",
   "Mode": "Default",
@@ -333,6 +333,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.7\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\IMDbApiLib.dll",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/IMDbApiLib.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\imdbapilib\\1.8.1\\lib\\netstandard2.0\\IMDbApiLib.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MediatR.Contracts.dll",
@@ -877,6 +894,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.7\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib\\netstandard2.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.dll",
@@ -3888,6 +3922,23 @@
       "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceProcess.dll"
     },
     {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\15xY50+m.gz",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
+    },
+    {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\1jZR2fA6.gz",
       "SourceId": "Client",
       "SourceType": "Project",
@@ -3988,6 +4039,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Primitives.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\3y1LBhDt.gz",
+      "SourceId": "Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/IMDbApiLib.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\IMDbApiLib.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\IMDbApiLib.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\obj\\Debug\\net6.0\\build-gz\\4pRbKPPe.gz",

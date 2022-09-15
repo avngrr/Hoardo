@@ -1,5 +1,4 @@
-﻿using Application.Features.Movies.Commands;
-using Application.Features.Movies.Responses;
+﻿using Application.Features.Movies.Responses;
 using Domain.Entities.Movies;
 
 namespace Application.Mappings.Movies;
@@ -14,6 +13,7 @@ public static class MovieMappings
             CleanTitle = movie.CleanTitle,
             Overview = movie.Overview,
             Monitored = movie.Monitored,
+            ImageUrl = movie.ImageUrl,
             Seen = movie.HasSeen,
             Year = movie.Year,
             Genres = movie.Genres,
@@ -33,21 +33,6 @@ public static class MovieMappings
             Year = response.Year,
             Genres = response.Genres,
             Added = response.Added
-        };
-    }
-    public static Movie ToMovie(this CreateMovieCommand command)
-    {
-        return new Movie
-        {
-            ImdbId = command.ImdbId,
-            Title = command.Title,
-            CleanTitle = command.Title,
-            Overview = command.Overview,
-            Monitored = command.Monitored,
-            HasSeen = command.Seen,
-            Year = command.Year,
-            Genres = command.Genres,
-            Added = DateTime.Now
         };
     }
 }

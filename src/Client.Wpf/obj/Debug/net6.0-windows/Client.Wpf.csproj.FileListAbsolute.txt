@@ -102,3 +102,5 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\obj\Debug\net6.0-w
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\obj\Debug\net6.0-windows\Views\TvView.baml
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\obj\Debug\net6.0-windows\Styles\Menu\MainMenu.baml
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\obj\Debug\net6.0-windows\App.baml
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\bin\Debug\net6.0-windows\IMDbApiLib.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client.Wpf\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

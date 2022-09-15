@@ -99,3 +99,4 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\Serve
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\obj\Debug\net6.0\ref\Server.dll
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\CommunityToolkit.Mvvm.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Server\bin\Debug\net6.0\IMDbApiLib.dll

@@ -27,5 +27,9 @@ public class MoviesViewModel : ViewModelBase
     {
         _allPagedMovies = await _movieManager.GetAllPaged(pageNumber, pageSize);
         OnPropertyChanged(nameof(Movies));
+        OnPropertyChanged(nameof(CurrentPage));
+        OnPropertyChanged(nameof(PageSize));
+        OnPropertyChanged(nameof(HasNext));
+        OnPropertyChanged(nameof(HasPrevious));
     }
 }

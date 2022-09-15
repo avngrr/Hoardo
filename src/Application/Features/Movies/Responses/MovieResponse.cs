@@ -6,6 +6,7 @@ public class MovieResponse
     public string Title { get; set; }
     public string CleanTitle { get; set; }
     public string Overview { get; set; }
+    public string ImageUrl { get; set; }
     public bool Monitored { get; set; }
     public bool Seen { get; set; }
     public int Year { get; set; }

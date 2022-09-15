@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3pjccjAoW0c0mF4wOfIEk8DXX1D/N4RByoiUfntNXJPyZ+cgLBrPA/T/WIUuA9f9+9YN6MwK5FYoOHrCiDMjKg==",
+  "dgSpecHash": "+9fKFYumSKsWFa4OcG+vZ/MEAivWvbv9l9H1xG7fmL+htw7SD0GIKxhTPV5qblMgGPYBsskCDhNCP7vhLwX+PA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\Documents\\Coding\\Projects\\Hoardo\\src\\Client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\imdbapilib\\1.8.1\\imdbapilib.1.8.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
@@ -35,6 +36,8 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.jsinterop\\6.0.7\\microsoft.jsinterop.6.0.7.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.7\\microsoft.jsinterop.webassembly.6.0.7.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

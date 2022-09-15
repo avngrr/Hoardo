@@ -90,6 +90,9 @@ namespace Server.Migrations
                     b.Property<bool>("HasSeen")
                         .HasColumnType("bit");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImdbId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -229,6 +232,9 @@ namespace Server.Migrations
 
                     b.Property<bool>("HasSeen")
                         .HasColumnType("bit");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImdbId")
                         .IsRequired()

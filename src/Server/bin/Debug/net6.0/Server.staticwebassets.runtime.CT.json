@@ -152,6 +152,14 @@
             },
             "Patterns": null
           },
+          "IMDbApiLib.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/IMDbApiLib.dll"
+            },
+            "Patterns": null
+          },
           "MediatR.Contracts.dll": {
             "Children": null,
             "Asset": {
@@ -405,6 +413,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/netstandard.dll"
+            },
+            "Patterns": null
+          },
+          "Newtonsoft.Json.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Newtonsoft.Json.dll"
             },
             "Patterns": null
           },
@@ -1824,6 +1840,14 @@
             },
             "Patterns": null
           },
+          "Newtonsoft.Json.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Newtonsoft.Json.dll.gz"
+            },
+            "Patterns": null
+          },
           "System.Linq.dll.gz": {
             "Children": null,
             "Asset": {
@@ -1869,6 +1893,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Net.Primitives.dll.gz"
+            },
+            "Patterns": null
+          },
+          "IMDbApiLib.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/IMDbApiLib.dll.gz"
             },
             "Patterns": null
           },

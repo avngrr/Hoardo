@@ -102,3 +102,5 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\obj\Debug\net6.0-wi
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\obj\Debug\net6.0-windows\Client.WpfApp.pdb
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\obj\Debug\net6.0-windows\Client.WpfApp.genruntimeconfig.cache
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\obj\Debug\net6.0-windows\ref\Client.WpfApp.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\bin\Debug\net6.0-windows\IMDbApiLib.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\Client.WpfApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

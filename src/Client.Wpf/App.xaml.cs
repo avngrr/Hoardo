@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Windows;
 using Application.Common.Interfaces.Movies;
+using Application.Common.Interfaces.Searchers;
 using Client.Wpf.Services;
 using Client.Wpf.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,6 +37,7 @@ public partial class App : System.Windows.Application
     {
         services.AddSingleton<MainWindow>();
         services.AddScoped<IMovieManager, MovieManager>();
+        services.AddScoped<ISearchManager, SearchManager>();
         services.AddScoped<MainViewModel>();
         services.AddScoped<MoviesViewModel>();
         services.AddScoped<TvViewModel>();

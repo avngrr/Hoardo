@@ -20,8 +20,8 @@ public class MovieManager : IMovieManager
         return await _httpClient.GetFromJsonAsync<GetAllPagedMovieResponse>(MovieEndpoints.GetAllPagedMovies(pageNumber, pageSize));
     }
 
-    public async Task SaveAsync(CreateMovieCommand command)
+    public async Task AddMovieAsync(string imdbId)
     {
-        var result = await _httpClient.PostAsJsonAsync(MovieEndpoints.AddMovie, command);
+        var result = await _httpClient.PostAsJsonAsync(MovieEndpoints.AddMovie, new CreateMovieCommand() { ImdbId = imdbId });
     }
 }

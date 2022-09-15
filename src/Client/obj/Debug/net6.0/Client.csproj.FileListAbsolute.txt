@@ -861,3 +861,11 @@ C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwro
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwroot\_framework\CommunityToolkit.Mvvm.dll.gz
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\CommunityToolkit.Mvvm.dll
 C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\obj\Debug\net6.0\build-gz\7IHzNwaC.gz
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwroot\_framework\IMDbApiLib.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\wwwroot\_framework\IMDbApiLib.dll.gz
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\IMDbApiLib.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\obj\Debug\net6.0\build-gz\3y1LBhDt.gz
+C:\Users\Enzo\Documents\Coding\Projects\Hoardo\src\Client\obj\Debug\net6.0\build-gz\15xY50+m.gz
